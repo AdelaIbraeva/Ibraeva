@@ -27,11 +27,22 @@ namespace Ibraeva
                 5, "бронетехника",
                 40, "оптико-электронное");
 
-            Console.WriteLine("=== Унаследованный метод GetInfo() ===");
+            AttackReconDrone orion = new AttackReconDrone(
+            "Орион", "Кронштадт",
+            200, 250, 30, 1150,
+            60, 7000,
+            "крылатая ракета", 4);
+
+            Drone[] drones = { forpost, lancet, koshchey, kamikaze, orion };
+
+            foreach (Drone d in drones)
+            {
+                Console.WriteLine(d.GetInfo());
+            }
+
             Console.WriteLine(forpost.GetInfo());
             Console.WriteLine(lancet.GetInfo());
 
-            Console.WriteLine("\n=== Собственные методы ===");
             forpost.PerformReconnaissance();
             lancet.PerformStrike();
             koshchey.DeliverCargo();

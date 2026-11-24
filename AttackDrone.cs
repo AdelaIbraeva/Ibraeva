@@ -4,8 +4,8 @@ namespace Ibraeva
 {
     public class AttackDrone : Drone
     {
-        public double WarheadWeight { get; set; }  // кг
-        public string TargetType { get; set; }     // тип цели
+        public double WarheadWeight { get; set; }
+        public string TargetType { get; set; }
 
         public AttackDrone(string model, string manufacturer,
                            double maxSpeed, double flightRange,
@@ -20,9 +20,7 @@ namespace Ibraeva
 
         public void PerformStrike()
         {
-            Console.WriteLine(
-                $"{Model} наносит удар по цели типа \"{TargetType}\". " +
-                $"Масса боевой части: {WarheadWeight} кг.");
+            Console.WriteLine($"{Model} наносит удар по цели типа \"{TargetType}\". Масса боевой части: {WarheadWeight} кг.");
         }
     }
 }

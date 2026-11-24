@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttackDrone.cs" />
+    <Compile Include="AttackReconDrone.cs" />
     <Compile Include="Drone.cs" />
     <Compile Include="LoiteringMunition.cs" />
     <Compile Include="Program.cs" />
